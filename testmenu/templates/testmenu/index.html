@@ -22,9 +22,12 @@
             <a class="item">About</a>
             <a class="item">Contact</a>
             <div class="item">
-                <form action="" method="get">
+                <form class="ui form" action="" method="get">
                     {% csrf_token %}
-                    <input type="text" name="q" placeholder="Search Blog">
+                    <div class="ui input">
+                        <input type="text" name="q" placeholder="Search Blog">
+                    </div>
+                    <button class="ui button" type="submit">Submit</button>
                     <button type="submit">Search</button>
                 </form>
             </div>
